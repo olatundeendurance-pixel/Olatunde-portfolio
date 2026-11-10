@@ -1,72 +1,205 @@
+
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Obolo Olatunde Elijah | Cybersecurity Portfolio</title>
+
+<title>Obolo Olatunde Elijah | IT & Cybersecurity Portfolio</title>
+
+<meta name="description" content="Portfolio of Obolo Olatunde Elijah, Computer Science graduate and entry-level IT and Cybersecurity professional.">
 
 <style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#0d1117;
-    color:white;
+
+:root {
+
+  --navy: #0b1730;
+
+  --blue: #142b50;
+
+  --gold: #e6b84a;
+
+  --light: #f4f7fc;
+
+  --text: #263449;
+
 }
 
-header{
-    text-align:center;
-    padding:60px 20px;
-    background:#161b22;
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  background: var(--light);
+
+  color: var(--text);
+
+  line-height: 1.7;
+
 }
 
-header h1{
-    font-size:45px;
-    color:#58a6ff;
+header {
+
+  background: var(--navy);
+
+  color: white;
+
+  padding: 65px 20px;
+
+  text-align: center;
+
+  border-bottom: 5px solid var(--gold);
+
 }
 
-header p{
-    font-size:20px;
+header h1 { font-size: 36px; margin: 0 0 10px; }
+
+header p { color: #d9e3f3; margin: 8px 0; }
+
+nav {
+
+  background: var(--blue);
+
+  padding: 14px 10px;
+
+  text-align: center;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 10;
+
 }
 
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    margin-right:10px;
-    padding:12px 25px;
-    background:#238636;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
+nav a {
+
+  color: white;
+
+  text-decoration: none;
+
+  margin: 0 10px;
+
+  font-size: 14px;
+
 }
 
-section{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
+nav a:hover { color: var(--gold); }
+
+.container {
+
+  max-width: 1000px;
+
+  margin: auto;
+
+  padding: 25px 18px;
+
 }
 
-h2{
-    color:#58a6ff;
-    border-bottom:2px solid #58a6ff;
-    padding-bottom:10px;
+section {
+
+  background: white;
+
+  padding: 28px;
+
+  margin: 22px 0;
+
+  border-radius: 12px;
+
+  box-shadow: 0 3px 15px rgba(0,0,0,.06);
+
 }
 
-.card{
-    background:#161b22;
-    padding:20px;
-    margin-top:20px;
-    border-radius:10px;
+h2 {
+
+  color: var(--navy);
+
+  border-bottom: 2px solid var(--gold);
+
+  padding-bottom: 9px;
+
 }
 
-ul{
-    line-height:2;
+h3 { color: var(--blue); margin-bottom: 4px; }
+
+.tag {
+
+  display: inline-block;
+
+  background: #eaf0fa;
+
+  color: var(--blue);
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  margin: 5px;
+
+  font-size: 14px;
+
 }
 
-footer{
-    text-align:center;
-    padding:30px;
-    background:#161b22;
+.button {
+
+  display: inline-block;
+
+  background: var(--gold);
+
+  color: var(--navy);
+
+  padding: 11px 18px;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  margin: 8px 5px;
+
 }
+
+.button:hover { background: #f3ca70; }
+
+.item { margin: 20px 0; }
+
+.date { color: #64748b; font-size: 14px; }
+
+footer {
+
+  background: var(--navy);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 25px 15px;
+
+}
+
+a { overflow-wrap: anywhere; }
+
+@media(max-width:600px) {
+
+  header h1 { font-size: 28px; }
+
+  nav a { display: inline-block; margin: 5px 7px; }
+
+  section { padding: 20px; }
+
+}
+
 </style>
 
 </head>
@@ -75,95 +208,290 @@ footer{
 
 <header>
 
-<h1>Obolo Olatunde Elijah</h1>
+  <h1>OBOLO OLATUNDE ELIJAH</h1>
 
-<p>Cybersecurity Professional | IT Support Specialist | Computer Science Graduate</p>
+  <p>Computer Science Graduate | IT Support | Cybersecurity</p>
 
-<a class="btn" href="OB0LO-OLATUNDE-ELIJAH-CV.pdf" target="_blank">Download CV</a>
+  <p>Learning, Building and Growing in Technology</p>
+
+  <a class="button" href="OB0LO-OLATUNDE-ELIJAH-CV.pdf" target="_blank">Download My CV</a>
+
+  <a class="button" href="#contact">Contact Me</a>
 
 </header>
 
-<section>
+<nav>
 
-<h2>About Me</h2>
+  <a href="#about">About</a>
 
-<div class="card">
+  <a href="#skills">Skills</a>
 
-<p>
-I am a Computer Science graduate with experience in IT Support,
-Linux administration, networking and cybersecurity.
-I recently completed the Cybersecurity (Dedicated Online)
-Program at CODAR Tech Africa and I am passionate about protecting
-organizations from cyber threats.
-</p>
+  <a href="#experience">Experience</a>
 
-</div>
+  <a href="#projects">Projects</a>
 
-<h2>Technical Skills</h2>
+  <a href="#education">Education</a>
 
-<div class="card">
+  <a href="#contact">Contact</a>
 
-<ul>
-<li>Network Security</li>
-<li>Linux Administration</li>
-<li>Windows Administration</li>
-<li>Wireshark</li>
-<li>Nmap</li>
-<li>TCP/IP</li>
-<li>Git & GitHub</li>
-<li>Microsoft Office</li>
-<li>IT Support</li>
-</ul>
+</nav>
 
-</div>
+<main class="container">
 
-<h2>Projects</h2>
+<section id="about">
 
-<div class="card">
+  <h2>About Me</h2>
 
-<ul>
-<li>Network Scanning using Nmap</li>
-<li>Wireshark Packet Analysis</li>
-<li>Linux Security Lab</li>
-<li>TCP/IP Network Assessment</li>
-<li>GitHub Portfolio</li>
-</ul>
+  <p>
 
-</div>
+    I am a Computer Science graduate with practical experience in
 
-<h2>Certification</h2>
+    school operations, computer laboratory support and production
 
-<div class="card">
+    operations. I have completed cybersecurity training at
 
-<p>Cybersecurity (Dedicated Online Program) - CODAR Tech Africa</p>
+    Codar Tech Africa and developed foundational practical skills
 
-<a class="btn" href="Obolo-Olatunde-CODAR-Certificate.pdf" target="_blank">View Certificate</a>
+    through guided laboratory exercises.
 
-</div>
+  </p>
 
-<h2>Contact</h2>
+  <p>
 
-<div class="card">
+    I am interested in entry-level opportunities in IT support,
 
-<p>Email: olatundeendurance@gmail.com</p>
+    technical support, networking and cybersecurity where I can
 
-<p>Location: Lagos, Nigeria</p>
+    contribute, learn and develop professionally.
 
-<p>GitHub:
-<a href="https://github.com/olatundeendurance-pixel" style="color:#58a6ff;">
-olatundeendurance-pixel
-</a>
-</p>
-
-</div>
+  </p>
 
 </section>
 
+<section id="skills">
+
+  <h2>Technical & Professional Skills</h2>
+
+  <div>
+
+    <span class="tag">IT Support</span>
+
+    <span class="tag">Windows Fundamentals</span>
+
+    <span class="tag">Linux Command Line</span>
+
+    <span class="tag">TCP/IP Fundamentals</span>
+
+    <span class="tag">Nmap</span>
+
+    <span class="tag">Wireshark</span>
+
+    <span class="tag">Network Fundamentals</span>
+
+    <span class="tag">Basic Linux Security</span>
+
+    <span class="tag">Microsoft Office</span>
+
+    <span class="tag">Record Keeping</span>
+
+    <span class="tag">Communication</span>
+
+    <span class="tag">Teamwork</span>
+
+    <span class="tag">Problem Solving</span>
+
+  </div>
+
+</section>
+
+<section id="experience">
+
+  <h2>Work Experience</h2>
+
+  <div class="item">
+
+    <h3>Hostel Personnel — Babington Macaulay Junior Seminary</h3>
+
+    <p class="date">2023 – Present</p>
+
+    <ul>
+
+      <li>Support daily hostel operations and student welfare routines.</li>
+
+      <li>Assist with record keeping and administrative coordination.</li>
+
+      <li>Work with colleagues to maintain an organised environment.</li>
+
+    </ul>
+
+  </div>
+
+  <div class="item">
+
+    <h3>IT Computer Laboratory Assistant — Babington Macaulay Junior Seminary</h3>
+
+    <p class="date">2019 – 2023</p>
+
+    <ul>
+
+      <li>Assisted with computer laboratory activities.</li>
+
+      <li>Supported basic computer usage and laboratory organisation.</li>
+
+    </ul>
+
+  </div>
+
+  <div class="item">
+
+    <h3>Hall Manager — Babington Macaulay Junior Seminary</h3>
+
+    <p class="date">2013 – 2019</p>
+
+    <ul>
+
+      <li>Supported hall operations and daily coordination.</li>
+
+      <li>Assisted with supervision and general administration.</li>
+
+    </ul>
+
+  </div>
+
+  <div class="item">
+
+    <h3>Operator Manager — Adisa Palm Oil Refinery</h3>
+
+    <p class="date">2011 – 2013</p>
+
+    <ul>
+
+      <li>Participated in production and machine operations.</li>
+
+      <li>Supported daily operational activities.</li>
+
+    </ul>
+
+  </div>
+
+</section>
+
+<section id="projects">
+
+  <h2>Practical Cybersecurity Labs</h2>
+
+  <p>
+
+    The following are training and learning exercises completed
+
+    as part of my cybersecurity development.
+
+  </p>
+
+  <div class="item">
+
+    <h3>Network Scanning with Nmap</h3>
+
+    <p>Practised host discovery and basic port scanning in a lab environment.</p>
+
+  </div>
+
+  <div class="item">
+
+    <h3>Packet Analysis with Wireshark</h3>
+
+    <p>Practised capturing and examining network traffic to understand communication protocols.</p>
+
+  </div>
+
+  <div class="item">
+
+    <h3>Linux Security Exercises</h3>
+
+    <p>Practised Linux commands, file permissions and basic firewall rules.</p>
+
+  </div>
+
+  <div class="item">
+
+    <h3>TCP/IP Networking Exercises</h3>
+
+    <p>Studied networking fundamentals, IP addressing and common network protocols.</p>
+
+  </div>
+
+  <p><strong>Project documentation:</strong></p>
+
+  <a class="button" href="Cybersecurity-Final-Project.pdf" target="_blank">View Final Project</a>
+
+</section>
+
+<section id="education">
+
+  <h2>Education & Certification</h2>
+
+  <div class="item">
+
+    <h3>Higher National Diploma (HND), Computer Science</h3>
+
+    <p>Lagos State Polytechnic — 2023</p>
+
+  </div>
+
+  <div class="item">
+
+    <h3>Ordinary National Diploma (OND), Computer Science</h3>
+
+    <p>Lagos State Polytechnic — 2018</p>
+
+  </div>
+
+  <div class="item">
+
+    <h3>Cybersecurity Training</h3>
+
+    <p>Codar Tech Africa — Certificate of Completion</p>
+
+    <a class="button" href="Obolo-Olatunde-CODAR-Certificate.pdf" target="_blank">View Certificate</a>
+
+  </div>
+
+  <div class="item">
+
+    <h3>O'Level Certificate</h3>
+
+    <p>Igomoni Community Grammar School — 2013</p>
+
+  </div>
+
+</section>
+
+<section id="contact">
+
+  <h2>Contact Me</h2>
+
+  <p><strong>Email:</strong> <a href="mailto:olatundeendurance@gmail.com">olatundeendurance@gmail.com</a></p>
+
+  <p><strong>Phone:</strong> 07063988434 / 07082326996</p>
+
+  <p><strong>Location:</strong> Lagos State, Nigeria</p>
+
+  <p><strong>GitHub:</strong> <a href="https://github.com/olatundeendurance-pixel" target="_blank">github.com/olatundeendurance-pixel</a></p>
+
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oboloolatunde" target="_blank">View my LinkedIn profile</a></p>
+
+</section>
+
+</main>
+
 <footer>
 
-© 2026 Obolo Olatunde Elijah
+  <p>© 2026 Obolo Olatunde Elijah. All Rights Reserved.</p>
+
+  <p>Building my future in Technology.</p>
 
 </footer>
 
 </body>
+
 </html>
